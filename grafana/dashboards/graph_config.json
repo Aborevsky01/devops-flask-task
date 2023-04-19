@@ -1,0 +1,91 @@
+{
+    "aliasColors": {},
+    "bars": false,
+    "dashLength": 10,
+    "dashes": false,
+    "datasource": "Prometheus",
+    "fill": 1,
+    "gridPos": {
+      "h": 9,
+      "w": 12,
+      "x": 0,
+      "y": 0
+    },
+    "id": 2,
+    "legend": {
+      "alignAsTable": true,
+      "avg": true,
+      "current": false,
+      "hideEmpty": false,
+      "hideZero": false,
+      "max": true,
+      "min": false,
+      "rightSide": true,
+      "show": true,
+      "total": false,
+      "values": true
+    },
+    "lines": true,
+    "linewidth": 1,
+    "links": [],
+    "nullPointMode": "null",
+    "percentage": false,
+    "pointradius": 5,
+    "points": true,
+    "renderer": "flot",
+    "seriesOverrides": [],
+    "spaceLength": 10,
+    "stack": false,
+    "steppedLine": false,
+    "targets": [
+      {
+        "expr": "rate(hello_world_counter[30s])",
+        "format": "time_series",
+        "hide": false,
+        "interval": "30s",
+        "intervalFactor": 1,
+        "legendFormat": "Server 5000",
+        "refId": "A"
+      }
+    ],
+    "thresholds": [],
+    "timeFrom": null,
+    "timeShift": null,
+    "title": "Visits per second",
+    "tooltip": {
+      "shared": true,
+      "sort": 0,
+      "value_type": "individual"
+    },
+    "transparent": false,
+    "type": "graph",
+    "xaxis": {
+      "buckets": null,
+      "mode": "time",
+      "name": null,
+      "show": true,
+      "values": []
+    },
+    "yaxes": [
+      {
+        "format": "short",
+        "label": null,
+        "logBase": 1,
+        "max": null,
+        "min": null,
+        "show": true
+      },
+      {
+        "format": "short",
+        "label": null,
+        "logBase": 1,
+        "max": null,
+        "min": null,
+        "show": true
+      }
+    ],
+    "yaxis": {
+      "align": false,
+      "alignLevel": null
+    }
+  }
