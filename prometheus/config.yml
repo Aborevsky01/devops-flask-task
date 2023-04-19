@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 1s
+
+rule_files:
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["prometheus:9090"]
+
+  - job_name: "Server 5000"
+    static_configs:
+      - targets: ["app:5000"]
